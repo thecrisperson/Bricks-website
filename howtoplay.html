@@ -1,0 +1,189 @@
+<html>
+
+<head>
+<title>How To Play</title>
+<style>
+
+body{
+
+				overflow-x: hidden;
+                overflow-y: hidden;
+                margin: 0;
+                width: 100%;
+                height: 100vh;
+                color: #fff;
+                background: linear-gradient(-45deg, #ffff00, #80bfff, #3399ff, #ffcc00);
+                background-size: 400% 400%;
+                animation: gradientBG 20s ease infinite;
+            }
+
+            @keyframes gradientBG {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            .title{
+            	display:block;
+			   	margin: 8px auto;
+			    text-align:center;
+			    font-family: Algerian;
+			    font-size: 25px;
+            }
+            .sidenav {
+            height: 100%; /* 100% Full-height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color: #111; /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            overflow-y: scroll;
+            padding-top: 60px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+          }
+
+          /* The navigation menu links */
+          .sidenav a {
+            padding: 8px 8px 8px 42px;
+            text-decoration: none;
+            font-family:verdana;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+          }
+
+          .sidenav h2 {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-family:verdana;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+          }
+
+          .sidenav h2:hover {
+            cursor: default;
+          }
+
+          .sidenav a:hover {
+            color: #f1f1f1;
+
+          }
+
+
+          .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+
+
+            #main {
+              transition: margin-left .5s;
+              padding: 20px;
+            }
+
+            @media screen and (max-height: 450px) {
+              .sidenav {padding-top: 15px;}
+              .sidenav a {font-size: 18px;}
+            }
+
+            .container {
+			    width: 100%;
+			    position: absolute;
+			    top: 35%;
+			    text-align: center;
+			}
+
+            .container {
+              cursor: pointer;
+              top: 8px;
+              left: 16px;
+            }
+
+            .bar1, .bar2, .bar3 {
+              width: 35px;
+              height: 5px;
+              background-color: #333;
+              margin: 6px 0;
+              transition: 0.4s;
+            }
+
+</style>
+
+<div class="title">
+<h1>Welcome To The B.R.I.C.K.S How To Play Page!</h1>
+<h5>Here You will Find Out How To Play Bricks!</h5>
+</div>
+</head>
+<body>
+<div class="title">
+<h5>Under Construction, Sorry!</h5>
+</div>
+<div class="container" onclick="openNav()">
+		        <div class="bar1"></div>
+		        <div class="bar2"></div>
+		        <div class="bar3"></div>
+		    </div>
+		    <div id="mySidenav" class="sidenav">
+		    <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
+
+				<ul id="myMenu">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			    	<li><a href= "https://gabriel.evanshill.co.uk/secret/upload/BRICKS/Real.html">Home</a></li>
+			    	<li><a href= "https://gabriel.evanshill.co.uk/games/BRICKSBetaWebgl/index.html">Play B.R.I.C.K.S Online</a></li>
+			    	<li><a href="https://gabriel.evanshill.co.uk/secret/upload/BRICKS/DownloadBRICKS.html">Download B.R.I.C.K.S</a></li>
+			    	<li><a href="http://gabriel.evanshill.co.uk/secret/">I.C.E Official Site</a></li>
+				</ul>
+			</div>
+
+</body>
+
+<script type="text/javascript">
+
+			
+			
+       		   		    function openNav() {
+		      document.getElementById("mySidenav").style.width = "350px";
+		    }
+
+		    
+		    function closeNav() {
+		      document.getElementById("mySidenav").style.width = "0";
+		    }
+		</script>
+		<script>
+				function search() {
+				  // Declare variables
+				  var input, filter, ul, li, a, i;
+				  input = document.getElementById("mySearch");
+				  filter = input.value.toUpperCase();
+				  ul = document.getElementById("myMenu");
+				  li = ul.getElementsByTagName("li");
+
+				  // Loop through all list items, and hide those who don't match the search query
+				  for (i = 0; i < li.length; i++) {
+				    a = li[i].getElementsByTagName("a")[0];
+				    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+				      li[i].style.display = "";
+				    } else {
+				      li[i].style.display = "none";
+				    }
+				  }
+				}
+			</script>
+
+
+
+</html>
